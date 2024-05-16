@@ -1,0 +1,61 @@
+header{
+    background-color: aquamarine;
+    padding:auto
+}
+body{
+    background-color: aqua;
+}
+ul{
+    display:flex;
+    margin: auto;
+    list-style-type: none;
+    list-style: none;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+a{
+    text-decoration: none;
+    color:black
+}
+li{
+    display:flex;
+    flex-flow: row wrap;
+    padding: 10px;
+
+}
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: solid;
+    display:flex
+}
+.foto-principal{
+    display:flex;
+    align-items: center;
+    margin: auto;
+    padding-top: 50px;
+}
+
+.imagenes-productos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.fuente{
+    color:red
+}
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+}
+h3{ 
+    font-weight: normal;
+}
+
+.contacto{
+    display:flex;
+    display: wrap;
+    text-align: center;
+}
+
+
