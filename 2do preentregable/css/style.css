@@ -70,4 +70,19 @@ header nav ul li a {
   padding-top: 3rem;
 }
 
+.boton-productos, .boton-prueba {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  border-radius: 5px;
+  margin: 20px;
+}
+
+.preguntas h2 {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bolder;
+  font-size: 20px;
+  color: red;
+}
+
 /*# sourceMappingURL=style.css.map */
