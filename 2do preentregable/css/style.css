@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding:0;
+}
+
 .contacto {
   display: flex;
   display: block;
@@ -44,9 +49,9 @@ header nav ul {
   list-style: none;
   text-align: center;
   justify-content: space-evenly;
-  font-family: "arial";
+  font-family: Arial, Helvetica, sans-serif;
 }
-header nav ul li {
+header nav ul li:hover {
   display: flex;
   flex-flow: row wrap;
   padding: 10px;
@@ -54,6 +59,7 @@ header nav ul li {
 header nav ul li a {
   text-decoration: none;
   color: red;
+
 }
 
 .foto-principal {
@@ -62,12 +68,37 @@ header nav ul li a {
   margin: auto;
   padding-top: 50px;
   padding-bottom: 50px;
+
+  animation-name: LadoALado;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-duration: 7s;
+  animation-delay: 1s
+
+
+    
 }
 
 .fuente {
   display: flex;
   justify-content: center;
   padding-top: 3rem;
+
+  animation-name: CambioColor;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-duration: 7s;
+  animation-delay: 1s
+}
+
+.segundo-titulo{
+  display:flex;
+  display:block;
+  text-align: center;
+  transition: 1s;
+}
+.segundo-titulo:hover{
+  transform:scale(2)
 }
 
 .boton-productos, .boton-prueba {
@@ -83,6 +114,54 @@ header nav ul li a {
   font-weight: bolder;
   font-size: 20px;
   color: red;
+}
+
+
+section p{
+  display: flex;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+
+.whatsapp{
+  position:fixed;
+  right: 25px;
+  bottom: 25px;
+
+  transition: 4s;
+}
+
+.whatsapp:hover{
+  transform:rotate(360deg);
+}
+
+@keyframes CambioColor {
+
+  0%{ 
+    color: black;
+
+  }
+  
+  50%{
+    color:blue;
+  }
+
+  100%{
+    color: red;
+  }
+}
+
+
+
+@keyframes LadoALado {
+
+  50%{
+    transform: translate(50px,25px)
+  }
+  100%{
+    transform:translate(10px, 50px) skew(15deg)
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
